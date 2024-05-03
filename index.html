@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kieosk | Share Zines</title>
+</head>
+<style>
+    html{overflow-x: clip; overflow-y: clip; font-size: 18px}
+    body{
+        width: 100vw;
+        min-height: 100vh;
+
+        margin: 0;
+        padding: 0;
+    }
+    #header{
+        font-family: "Courier New", sans-serif;
+        font-weight: lighter;
+        font-size: 3rem;
+
+        text-align: center;
+
+        margin: 0;
+        padding: 4rem 3rem 2rem 3rem;
+    }
+
+    main{
+        overflow-x: clip;
+        overflow-y: scroll;
+
+        width: 89vw;
+        height: 70vh;
+
+        margin: auto;
+        padding: 2rem 1rem 2rem 1rem;
+
+        box-sizing: border-box;
+        border-radius: 1rem;
+
+        background-color: #f6f6f6;
+    }
+
+    .genre-title{
+        text-align: right;
+        color: gray;
+
+        margin: 2rem 1rem 0.5rem auto;
+
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    .genre-standout{
+        width: 100%;
+        height: 23rem;
+
+        background-color: deeppink;
+
+        margin: 0 0 0.5rem 0;
+        padding: 0;
+    }
+    .genre-section{
+        display: grid;
+
+        width: 100%;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1.33rem;
+
+        margin: 0;
+        padding: 0;
+    }
+    .single-zine{
+        width: 100%;
+        height: 30rem;
+
+        background-color: orange;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    footer{
+        height: 30rem;
+    }
+    #web-controls{
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+
+        height: 72%;
+        width: 100%;
+
+        background-color: transparent;
+    }
+    #sticky-note, #saves, #search{
+        margin: auto;
+
+        border-radius: 30rem;
+
+        width: 70%;
+        height: 55%;
+
+        background-color: #e5e5e5;
+    }
+    #footer-information{
+        height: 28%;
+        width: 89vw;
+
+        padding: 0;
+        margin: auto;
+
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+
+        bottom: 0;
+        background-color: #e5e5e5;
+    }
+</style>
+<body>
+    <header>
+        <h1 id="header">kieosk</h1>
+    </header>
+    <main>
+        <section id="political-zines">
+            <h4 class="genre-title">Politics</h4>
+            <article class="genre-standout"></article>
+            <div class="genre-section">
+                <article class="single-zine"></article>
+                <article class="single-zine"></article>
+                <article class="single-zine"></article>
+            </div>
+        </section>
+        <section id="environmental-zines">
+            <h4 class="genre-title">Environment</h4>
+            <article class="genre-standout"></article>
+            <div class="genre-section">
+                <article class="single-zine"></article>
+                <article class="single-zine"></article>
+                <article class="single-zine"></article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="web-controls">
+            <div id="saves"></div>
+            <div id="search"></div>
+            <div id="sticky-note"></div>
+        </section>
+        <section id="footer-information">
+
+        </section>
+    </footer>
+</body>
+</html>
